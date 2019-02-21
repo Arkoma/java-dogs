@@ -15,6 +15,6 @@ public class DogResourceAssembler implements ResourceAssembler<Dog, Resource<Dog
                 linkTo(methodOn(DogController.class).allByBreed()).withRel("dogs"),
                 linkTo(methodOn(DogController.class).allByWeight()).withRel("dogs"),
                 linkTo(methodOn(DogController.class).showBreed(dog.getBreed())).withSelfRel(),
-                linkTo(methodOn(DogController.class).allGoodForApartment(dog.isGoodForApartment())).withSelfRel());
+                linkTo(methodOn(DogController.class).allGoodForApartment()).withSelfRel());
     }
 }

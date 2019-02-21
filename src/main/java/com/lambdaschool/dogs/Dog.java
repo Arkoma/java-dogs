@@ -27,6 +27,10 @@ public class Dog {
         this.id = id;
     }
 
+    public Long getId() {
+        return this.id;
+    }
+
     public String getBreed() {
         return breed;
     }
